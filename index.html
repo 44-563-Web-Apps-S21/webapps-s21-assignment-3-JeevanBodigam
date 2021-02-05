@@ -3,6 +3,15 @@
 
 <head>
     <title>MyProfile-Jeevan Bodigam</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,13 +33,13 @@
         <li>Install the application and login with your created account</li>
         <li>Make sure you create a folder for a project</li>
         <li>Use appropraite verbs as per your request</li>
-            <ol>
-                <li>GET,PUT,POST are called HTTP verbs</li>
-                <li>GET for getting an reposnse</li>
-                <li>POST for sending data with request</li>
-                <li>DELETE for deleting on server</li>
-                <li>PUT for updating something on the server</li>
-            </ol>
+        <ol>
+            <li>GET,PUT,POST are called HTTP verbs</li>
+            <li>GET for getting an reposnse</li>
+            <li>POST for sending data with request</li>
+            <li>DELETE for deleting on server</li>
+            <li>PUT for updating something on the server</li>
+        </ol>
         <li>Run a simple GET request for testing.</li>
         <li>Check the response and response code are correct</li>
         <li>Move to other request</li>
@@ -40,10 +49,65 @@
             <li>Make sure you have an active server running</li>
             <li>If you have enough space (300MB) on your disk.
             </li>
-            <li>Make sure you use desktop version since you may not have internet connectivty all the time for web version</li>
+            <li>Make sure you use desktop version since you may not have internet connectivty all the time for web
+                version</li>
         </ul>
     </ol>
-    <a href="aboutme.html">My Profile</a>
+    <hr>
+    <h2>Places I Recommend to visit:</h2>
+    <p>These are the places I love the most and I Recommend poeple to visit these places. These are budget friendly and
+        pleasant places.Here is the list:</p>
+    <table>
+        <tr>
+            <th>Location</th>
+            <th>Number of Hours</th>
+            <th>Amount in $</th>
+        </tr>
+        <tr>
+            <td>Coorg</td>
+            <td>10</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>Leh</td>
+            <td>8</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Araku</td>
+            <td>12</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>Ooty</td>
+            <td>8</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Amritsar</td>
+            <td>3</td>
+            <td>150</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>PHP: A Scripting Language</h2>
+    <blockquote cite="https://www.php.net/">PHP is a popular general-purpose scripting language that is especially
+        suited to web development.
+        Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.PHP
+        code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or as a Common
+        Gateway Interface (CGI) executable. On a web server, the result of the interpreted and executed PHP code – which
+        may be any type of data, such as generated HTML or binary image data – would form the whole or part of an HTTP
+        response.
+    </blockquote>
+    Source: <a href="https://www.php.net/">https://www.php.net/</a>
+    <pre>
+        &lt;?php
+            $pageName = basename($_SERVER['PHP_SELF']);
+        ?&gt;
+    </pre>
+    Ref: <a href="https://css-tricks.com/snippets/php/get-current-file-name/" target="_blank">https://css-tricks.com/snippets/php/get-current-file-name/</a>
+    <br><br><a href="aboutme.html">Click here to view My Profile</a>
 </body>
 
 </html>
